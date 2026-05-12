@@ -1,0 +1,51 @@
+{
+  "name": "ufuq-platform",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "clean": "node scripts/clean-next.mjs",
+    "dev": "next dev",
+    "dev:clean": "node scripts/clean-next.mjs && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "processSlides": "tsx scripts/processSlides.mts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "@supabase/supabase-js": "^2.48.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "ethers": "^6.16.0",
+    "framer-motion": "^11.11.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^0.462.0",
+    "next": "14.2.5",
+    "next-themes": "^0.3.0",
+    "pptxgenjs": "^4.0.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "recharts": "^3.8.1",
+    "tailwind-merge": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.37",
+    "@types/pdf-parse": "^1.1.5",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "adm-zip": "^0.5.16",
+    "autoprefixer": "^10.4.20",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.5",
+    "pdf-parse": "^1.1.1",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "tailwindcss-animate": "^1.0.7",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.3"
+  }
+}

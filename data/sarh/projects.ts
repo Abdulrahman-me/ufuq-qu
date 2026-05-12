@@ -1,0 +1,230 @@
+export type CareerPath = "fullstack" | "frontend" | "backend" | "mobile" | "data-science" | "ai";
+
+export interface ProjectItem {
+    id: string;
+    title: string;
+    description: string;
+    difficulty: "beginner" | "intermediate" | "advanced";
+    estimatedWeeks: { min: number; max: number };
+    badges: string[];
+    careerPaths: CareerPath[];
+    type: "single" | "multi";
+}
+
+export interface CareerPathItem {
+    id: CareerPath;
+    label: string;
+}
+
+export const ALL_SUBJECTS = [
+    "الجبر الخطي",
+    "الإحصاء",
+    "الذكاء الاصطناعي",
+    "التفاضل والتكامل",
+    "برمجة 1",
+    "نظم قواعد البيانات",
+    "الخوارزميات",
+    "تراكيب البيانات",
+];
+
+export const CAREER_PATHS: CareerPathItem[] = [
+    { id: "fullstack", label: "مطور ويب شامل" },
+    { id: "frontend", label: "واجهات برمجية" },
+    { id: "backend", label: "أنظمة خلفية" },
+    { id: "mobile", label: "تطبيقات جوال" },
+    { id: "data-science", label: "علوم البيانات" },
+    { id: "ai", label: "الذكاء الاصطناعي" },
+];
+
+export const projectsData: ProjectItem[] = [
+    {
+        id: "1",
+        title: "نظام إدارة المهام الذكي",
+        description: "تطبيق ويب متكامل لإدارة المهام مع ميزات التذكير والتصنيف التلقائي باستخدام الذكاء الاصطناعي.",
+        difficulty: "intermediate",
+        estimatedWeeks: { min: 4, max: 6 },
+        badges: ["برمجة 1", "الذكاء الاصطناعي"],
+        careerPaths: ["fullstack", "ai"],
+        type: "multi",
+    },
+    {
+        id: "2",
+        title: "محلل البيانات المالية",
+        description: "أداة لتحليل البيانات المالية وتوقع الاتجاهات المستقبلية للاسهم باستخدام النماذج الإحصائية.",
+        difficulty: "advanced",
+        estimatedWeeks: { min: 6, max: 8 },
+        badges: ["الإحصاء", "الجبر الخطي"],
+        careerPaths: ["data-science"],
+        type: "multi",
+    },
+    {
+        id: "3",
+        title: "محرك البحث المصغر",
+        description: "بناء فهرس ومحرك بحث بسيط يعتمد على هياكل البيانات والخوارزميات الفعالة.",
+        difficulty: "intermediate",
+        estimatedWeeks: { min: 4, max: 5 },
+        badges: ["تراكيب البيانات", "الخوارزميات"],
+        careerPaths: ["backend"],
+        type: "multi",
+    },
+    {
+        id: "4",
+        title: "تطبيق التوصية السينمائي",
+        description: "نظام يوصي بالأفلام للمستخدمين بناءً على تفضيلاتهم باستخدام تصفية البيانات.",
+        difficulty: "beginner",
+        estimatedWeeks: { min: 3, max: 4 },
+        badges: ["برمجة 1"],
+        careerPaths: ["frontend"],
+        type: "single",
+    },
+    {
+        id: "5",
+        title: "نظام إدارة المستودعات",
+        description: "قاعدة بيانات متكاملة لإدارة المخازن والمبيعات مع تقارير حية.",
+        difficulty: "intermediate",
+        estimatedWeeks: { min: 5, max: 7 },
+        badges: ["نظم قواعد البيانات"],
+        careerPaths: ["backend"],
+        type: "single",
+    },
+    {
+        id: "6",
+        title: "روبوت الدردشة الأكاديمي",
+        description: "بوت يساعد الطلاب في الوصول للمعلومات الأكاديمية والجدول الدراسي.",
+        difficulty: "intermediate",
+        estimatedWeeks: { min: 4, max: 6 },
+        badges: ["الذكاء الاصطناعي", "برمجة 1"],
+        careerPaths: ["ai", "backend"],
+        type: "multi",
+    },
+    {
+        id: "7",
+        title: "متتبع اللياقة البدنية",
+        description: "تطبيق جوال يتتبع النشاط البدني ويحلل السعرات الحرارية.",
+        difficulty: "beginner",
+        estimatedWeeks: { min: 3, max: 5 },
+        badges: ["برمجة 1"],
+        careerPaths: ["mobile"],
+        type: "single",
+    },
+    {
+        id: "8",
+        title: "نظام التشفير الآمن",
+        description: "تطبيق لتشفير وفك تشفير الرسائل باستخدام خوارزميات التشفير المتقدمة.",
+        difficulty: "advanced",
+        estimatedWeeks: { min: 5, max: 7 },
+        badges: ["الخوارزميات", "تراكيب البيانات"],
+        careerPaths: ["backend"],
+        type: "multi",
+    },
+    {
+        id: "9",
+        title: "منصة التعليم الإلكتروني",
+        description: "موقع تعليمي يتيح رفع الدورات ومشاهدة المحتوى التفاعلي.",
+        difficulty: "intermediate",
+        estimatedWeeks: { min: 6, max: 8 },
+        badges: ["برمجة 1", "نظم قواعد البيانات"],
+        careerPaths: ["fullstack"],
+        type: "multi",
+    },
+    {
+        id: "10",
+        title: "نظام التحقق من الانتحال",
+        description: "أداة تقارن النصوص البرمجية للكشف عن التشابه بين المشاريع باستخدام خوارزميات مطابقة الأنماط.",
+        difficulty: "advanced",
+        estimatedWeeks: { min: 5, max: 8 },
+        badges: ["الخوارزميات", "برمجة 1"],
+        careerPaths: ["backend"],
+        type: "multi",
+    },
+    {
+        id: "11",
+        title: "منصة التداول التجريبي",
+        description: "واجهة لمحاكاة تداول العملات الرقمية باستخدام بيانات حية وتحليل إحصائي أساسي.",
+        difficulty: "intermediate",
+        estimatedWeeks: { min: 4, max: 7 },
+        badges: ["الإحصاء", "برمجة 1"],
+        careerPaths: ["fullstack"],
+        type: "multi",
+    },
+    {
+        id: "12",
+        title: "تطبيق التنبؤ بالطقس",
+        description: "تطبيق يستخدم نماذج تعلم الآلة البسيطة للتنبؤ بحالة الطقس بناءً على بيانات تاريخية.",
+        difficulty: "intermediate",
+        estimatedWeeks: { min: 4, max: 6 },
+        badges: ["الذكاء الاصطناعي", "الإحصاء"],
+        careerPaths: ["data-science", "ai"],
+        type: "multi",
+    },
+    {
+        id: "13",
+        title: "مولد المواقع الثابتة",
+        description: "أداة برمجية تحول ملفات Markdown إلى صفحات HTML متكاملة بتصاميم عصرية.",
+        difficulty: "beginner",
+        estimatedWeeks: { min: 3, max: 5 },
+        badges: ["برمجة 1"],
+        careerPaths: ["frontend"],
+        type: "single",
+    },
+    {
+        id: "14",
+        title: "نظام حجوزات الفنادق",
+        description: "قاعدة بيانات ونظام ويب لإدارة الغرف والحجوزات والمدفوعات.",
+        difficulty: "intermediate",
+        estimatedWeeks: { min: 5, max: 7 },
+        badges: ["نظم قواعد البيانات"],
+        careerPaths: ["fullstack"],
+        type: "single",
+    },
+    {
+        id: "15",
+        title: "محلل المشاعر في تويتر",
+        description: "أداة تحلل التغريدات لتصنيفها كإيجابية أو سلبية باستخدام معالجة اللغات الطبيعية.",
+        difficulty: "advanced",
+        estimatedWeeks: { min: 6, max: 9 },
+        badges: ["الذكاء الاصطناعي"],
+        careerPaths: ["ai", "data-science"],
+        type: "single",
+    },
+    {
+        id: "16",
+        title: "لعبة الألغاز الرياضية",
+        description: "تطبيق جوال يحتوي على سلسلة من الألغاز التي تعتمد على مفاهيم الجبر والهندسة.",
+        difficulty: "beginner",
+        estimatedWeeks: { min: 2, max: 4 },
+        badges: ["الجبر الخطي"],
+        careerPaths: ["mobile"],
+        type: "single",
+    },
+    {
+        id: "17",
+        title: "محاكي الشبكات العصبية",
+        description: "أداة تعليمية مرئية توضح كيفية عمل الطبقات في الشبكات العصبية باستخدام الجبر الخطي.",
+        difficulty: "advanced",
+        estimatedWeeks: { min: 7, max: 10 },
+        badges: ["الجبر الخطي"],
+        careerPaths: ["ai", "data-science"],
+        type: "single",
+    },
+    {
+        id: "18",
+        title: "مستكشف الخوارزميات التفاعلي",
+        description: "موقع ويب يعرض الرسوم المتحركة لخوارزميات البحث والفرز الشهيرة.",
+        difficulty: "intermediate",
+        estimatedWeeks: { min: 4, max: 6 },
+        badges: ["الخوارزميات"],
+        careerPaths: ["frontend"],
+        type: "single",
+    },
+    {
+        id: "19",
+        title: "مدير الميزانية الشخصية",
+        description: "تطبيق لتتبع المصاريف والدخل مع رسوم بيانية للتوزيع المالي.",
+        difficulty: "beginner",
+        estimatedWeeks: { min: 3, max: 5 },
+        badges: ["تراكيب البيانات"],
+        careerPaths: ["mobile"],
+        type: "single",
+    },
+];

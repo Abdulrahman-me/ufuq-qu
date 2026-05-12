@@ -1,0 +1,6 @@
+{
+  "_comment": "ضع الملف في public/podcasts/ (MP3 أو MP4 صوتي). المفتاح يطابق بالضبط: اسم مجلد المادة تحت content/slides + '/' + عنوان الفصل كما في اسم ملف الشرائح بدون الامتداد (حسّاس لحالة الأحرف والمسافات). مثال: Discrete mathematics/Chapter 1. عمود Supabase podcast_audio_url نفس مسار الويب مثل /podcasts/اسم الملف.mp3",
+  "programming1/Chapter 1": "/podcasts/programming1-Chapter_1.mp3",
+  "Discrete mathematics/Chapter 1": "/podcasts/discrete_mathematics-Chapter_1.mp3"
+}
+
