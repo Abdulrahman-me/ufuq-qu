@@ -59,7 +59,8 @@
     "react-router-dom": "^7.15.0",
     "recharts": "^3.8.1",
     "sonner": "^2.0.7",
-    "tailwind-merge": "^2.6.1"
+    "tailwind-merge": "^2.6.1",
+    "vaul": "^1.1.2"
   },
   "devDependencies": {
     "@types/node": "^20.19.37",
