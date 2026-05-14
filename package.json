@@ -31,6 +31,7 @@
     "pptxgenjs": "^4.0.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "react-router-dom": "^7.15.0",
     "recharts": "^3.8.1",
     "sonner": "^2.0.7",
     "tailwind-merge": "^2.6.0"
@@ -40,6 +41,7 @@
     "@types/pdf-parse": "^1.1.5",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "@types/react-router-dom": "^5.3.3",
     "adm-zip": "^0.5.16",
     "autoprefixer": "^10.4.20",
     "dotenv": "^16.4.5",
