@@ -31,7 +31,7 @@ function iconForName(name: string) {
 
 type Subject = { id: string; name: string; description: string | null };
 
-export function LearnSubjectsClient({ subjects }: { subjects: Subject[] }) {
+export function LearnSubjectsClient({ subjects, error }: { subjects: Subject[]; error?: string | null }) {
   const typed = useTypewriter(TYPE_PHRASES, 36, 2200, 28);
 
   const container = {
@@ -94,6 +94,11 @@ export function LearnSubjectsClient({ subjects }: { subjects: Subject[] }) {
             >
               <BookOpen className="mx-auto mb-4 h-14 w-14 text-muted-foreground opacity-60" />
               <p className="text-lg font-bold text-foreground">لا توجد مواد متاحة حالياً</p>
+              {error && (
+                <p className="mt-2 text-xs font-mono text-destructive bg-destructive/10 p-2 rounded border border-destructive/20">
+                  Error: {error}
+                </p>
+              )}
               <p className="mt-2 text-sm text-muted-foreground">
                 شغّل المعالجة المسبقة وأضف المواد في Supabase، ثم أعد تحميل الصفحة.
               </p>
