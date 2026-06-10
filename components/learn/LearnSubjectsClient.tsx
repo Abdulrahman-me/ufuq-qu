@@ -104,7 +104,7 @@ export function LearnSubjectsClient({ subjects, error }: { subjects: Subject[]; 
               </p>
               <Link
                 href="/dashboard"
-                className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-black text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-[1.02]"
+                className="mt-6 inline-flex items-center gap-2 rounded-2xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-6 py-3 text-sm font-black text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-[1.02]"
               >
                 <ArrowLeft className="h-4 w-4" />
                 لوحة التحكم

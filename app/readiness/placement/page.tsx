@@ -272,7 +272,7 @@ export default function PlacementPage() {
                 handleSubmit();
               }
             }}
-            className="rounded-xl bg-primary px-6 py-2 text-sm font-bold text-primary-foreground disabled:opacity-50"
+            className="rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-6 py-2 text-sm font-bold text-primary-foreground disabled:opacity-50"
           >
             {currentIndex < QUESTIONS.length - 1
               ? "السؤال التالي"

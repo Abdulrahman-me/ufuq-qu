@@ -19,7 +19,7 @@ export function TopNav() {
     <header className="fixed top-0 z-40 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-16 py-4">
       <div className="mx-auto flex max-w-6xl items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-grad-2 text-white text-lg font-bold">
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-l from-[#1B8354] to-[#25935F] text-white text-lg font-bold">
             أ
           </div>
           <span className="text-xl font-black tracking-tight">أفق</span>
@@ -48,7 +48,7 @@ export function TopNav() {
           >
             {theme === "dark" ? "☀" : "☾"}
           </button>
-          <button className="hidden sm:inline-flex items-center rounded-xl bg-grad-2 px-5 py-2 text-sm font-bold text-white">
+          <button className="hidden sm:inline-flex items-center rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-5 py-2 text-sm font-bold text-white">
             تسجيل الدخول
           </button>
         </div>

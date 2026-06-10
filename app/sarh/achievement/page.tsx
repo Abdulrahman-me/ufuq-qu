@@ -192,7 +192,7 @@ export default function AchievementPage() {
                                             </div>
                                             <button
                                                 onClick={() => handleOpenProject(project)}
-                                                className="p-2 rounded-lg bg-background border border-border opacity-0 group-hover:opacity-100 transition-all hover:bg-primary hover:text-black"
+                                                className="p-2 rounded-lg bg-background border border-border opacity-0 group-hover:opacity-100 transition-all hover:bg-gradient-to-l from-[#1B8354] to-[#25935F] hover:text-black"
                                             >
                                                 <ArrowUpRight className="h-4 w-4" />
                                             </button>
@@ -221,7 +221,7 @@ export default function AchievementPage() {
                         </section>
 
                         {/* CTA Card (More compact and smaller button) */}
-                        <section className="bg-primary rounded-3xl p-8 text-primary-foreground shadow-xl shadow-primary/20 flex items-center justify-between overflow-hidden relative group">
+                        <section className="bg-gradient-to-l from-[#1B8354] to-[#25935F] rounded-3xl p-8 text-primary-foreground shadow-xl shadow-primary/20 flex items-center justify-between overflow-hidden relative group">
                             <div className="absolute -right-12 -bottom-12 h-32 w-32 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-1000" />
                             <div className="relative z-10 space-y-1">
                                 <h4 className="font-black text-xl mb-0.5 tracking-tight">ابدأ صرحاً جديداً</h4>

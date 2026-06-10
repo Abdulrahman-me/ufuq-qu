@@ -22,7 +22,7 @@ export default function PitchError({
       <button
         type="button"
         onClick={() => reset()}
-        className="mt-8 rounded-2xl bg-primary px-6 py-2.5 text-sm font-black text-primary-foreground"
+        className="mt-8 rounded-2xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-6 py-2.5 text-sm font-black text-primary-foreground"
       >
         إعادة المحاولة
       </button>

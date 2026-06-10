@@ -338,7 +338,7 @@ function DemoScreen({ phase, noteText }: { phase: number; noteText: string }) {
           <motion.div
             animate={{ scale: [1, 1.03, 1] }}
             transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
-            className="rounded-2xl bg-primary px-8 py-3 text-sm font-black text-primary-foreground shadow-lg shadow-primary/30"
+            className="rounded-2xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-8 py-3 text-sm font-black text-primary-foreground shadow-lg shadow-primary/30"
           >
             انتقل للمنصة التعليمية
           </motion.div>
@@ -443,7 +443,7 @@ function DemoScreen({ phase, noteText }: { phase: number; noteText: string }) {
               </ul>
               <button
                 type="button"
-                className="mt-4 w-full rounded-lg bg-primary py-2.5 text-xs font-bold text-primary-foreground"
+                className="mt-4 w-full rounded-lg bg-gradient-to-l from-[#1B8354] to-[#25935F] py-2.5 text-xs font-bold text-primary-foreground"
               >
                 حفظ التقرير وإغلاق
               </button>
@@ -463,7 +463,7 @@ function DemoScreen({ phase, noteText }: { phase: number; noteText: string }) {
           <p className="text-center text-sm font-bold text-foreground">نفس التدفق في المنصة الحقيقية</p>
           <Link
             href="/learn"
-            className="rounded-xl bg-primary px-6 py-2.5 text-sm font-black text-primary-foreground shadow-lg shadow-primary/25"
+            className="rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-6 py-2.5 text-sm font-black text-primary-foreground shadow-lg shadow-primary/25"
           >
             ادخل المنصة التعليمية
           </Link>

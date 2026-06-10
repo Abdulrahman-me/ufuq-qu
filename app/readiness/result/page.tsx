@@ -63,7 +63,7 @@ export default function ReadinessResultPage() {
             <p className="text-3xl font-black text-primary">{totalReadiness}%</p>
             <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-muted">
               <div
-                className="h-full rounded-full bg-primary transition-all"
+                className="h-full rounded-full bg-gradient-to-l from-[#1B8354] to-[#25935F] transition-all"
                 style={{ width: `${totalReadiness}%` }}
               />
             </div>
@@ -149,7 +149,7 @@ export default function ReadinessResultPage() {
         <div className="flex justify-end pt-4">
           <Link
             href="/learn"
-            className="rounded-xl bg-primary px-6 py-2 text-sm font-bold text-primary-foreground"
+            className="rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-6 py-2 text-sm font-bold text-primary-foreground"
           >
             الانتقال إلى المنصة التعليمية
           </Link>

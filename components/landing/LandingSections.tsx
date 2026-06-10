@@ -210,7 +210,7 @@ export function LandingSections() {
           <div className="flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/learn"
-              className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:opacity-90"
+              className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-6 py-3 text-sm font-bold text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:opacity-90"
             >
               <ArrowLeft className="h-4 w-4" />
               ادخل المنصة التعليمية

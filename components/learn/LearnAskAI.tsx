@@ -77,7 +77,7 @@ export function LearnAskAI({ chapterSummary, className }: LearnAskAIProps) {
               disabled={loading}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="flex h-11 w-11 shrink-0 items-center justify-center self-end rounded-2xl bg-primary text-primary-foreground shadow-lg shadow-primary/30 disabled:opacity-50 sm:self-auto"
+              className="flex h-11 w-11 shrink-0 items-center justify-center self-end rounded-2xl bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground shadow-lg shadow-primary/30 disabled:opacity-50 sm:self-auto"
             >
               <Send className="h-4 w-4" />
             </motion.button>

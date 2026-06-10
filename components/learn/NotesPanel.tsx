@@ -249,7 +249,7 @@ export function NotesSection({ chapterId, chapterTitle }: NotesSectionProps) {
                 type="button"
                 onClick={handleSaveActive}
                 disabled={!activeId}
-                className="rounded-xl bg-primary px-4 py-2 text-xs font-black text-primary-foreground shadow-md shadow-primary/20 transition-opacity disabled:opacity-50"
+                className="rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-4 py-2 text-xs font-black text-primary-foreground shadow-md shadow-primary/20 transition-opacity disabled:opacity-50"
               >
                 حفظ الملاحظة
               </button>

@@ -241,7 +241,7 @@ export function PodcastPlayer({ audioUrl, title, className }: PodcastPlayerProps
                 style={{ width: `${progressPct}%` }}
               />
               <div
-                className="pointer-events-none absolute top-1/2 z-10 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-background bg-primary opacity-0 shadow-md transition-opacity group-hover:opacity-100"
+                className="pointer-events-none absolute top-1/2 z-10 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-background bg-gradient-to-l from-[#1B8354] to-[#25935F] opacity-0 shadow-md transition-opacity group-hover:opacity-100"
                 style={{ left: `${progressPct}%` }}
               />
             </div>
@@ -265,7 +265,7 @@ export function PodcastPlayer({ audioUrl, title, className }: PodcastPlayerProps
               <button
                 type="button"
                 onClick={togglePlay}
-                className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-[1.03] active:scale-[0.98]"
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-[1.03] active:scale-[0.98]"
                 aria-label={playing ? "إيقاف" : "تشغيل"}
               >
                 {playing ? <Pause className="h-6 w-6" /> : <Play className="ms-0.5 h-6 w-6" />}
@@ -291,7 +291,7 @@ export function PodcastPlayer({ audioUrl, title, className }: PodcastPlayerProps
                     className={cn(
                       "min-w-[2.5rem] rounded-lg px-2 py-1.5 text-xs font-bold transition-colors",
                       playbackRate === rate
-                        ? "bg-primary text-primary-foreground shadow-sm"
+                        ? "bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground shadow-sm"
                         : "text-muted-foreground hover:text-foreground",
                     )}
                   >

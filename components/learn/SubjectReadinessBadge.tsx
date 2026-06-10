@@ -37,7 +37,7 @@ export function SubjectReadinessBadge({
       <span className="text-xs text-muted-foreground">جاهزية</span>
       <div className="h-2 w-20 rounded-full bg-muted overflow-hidden border border-border">
         <div
-          className="h-full bg-primary"
+          className="h-full bg-gradient-to-l from-[#1B8354] to-[#25935F]"
           style={{ width: `${Math.max(0, Math.min(100, v))}%` }}
         />
       </div>

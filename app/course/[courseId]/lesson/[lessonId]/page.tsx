@@ -65,7 +65,7 @@ export default function LessonPage({ params }: LessonPageProps) {
                 <button className="flex items-center gap-2 bg-muted px-4 py-2 rounded-lg text-sm font-bold">
                   <span>مشاركة</span>
                 </button>
-                <button className="flex items-center gap-2 bg-primary px-6 py-2 rounded-lg text-sm font-bold text-white shadow-lg shadow-primary/20">
+                <button className="flex items-center gap-2 bg-gradient-to-l from-[#1B8354] to-[#25935F] px-6 py-2 rounded-lg text-sm font-bold text-white shadow-lg shadow-primary/20">
                   <span>تدوين ملاحظة</span>
                 </button>
               </div>
@@ -81,7 +81,7 @@ export default function LessonPage({ params }: LessonPageProps) {
               <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/90 to-transparent text-xs text-white">
                 <div className="flex items-center gap-4 mb-3">
                   <div className="flex-1 h-1.5 bg-slate-700/50 rounded-full relative overflow-hidden">
-                    <div className="absolute inset-y-0 left-0 bg-primary w-1/3 rounded-full" />
+                    <div className="absolute inset-y-0 left-0 bg-gradient-to-l from-[#1B8354] to-[#25935F] w-1/3 rounded-full" />
                   </div>
                   <span className="font-medium">08:45 / 24:00</span>
                 </div>
@@ -113,7 +113,7 @@ export default function LessonPage({ params }: LessonPageProps) {
                       </p>
                       <div className="flex items-center gap-4">
                         <div className="flex-1 h-1 bg-slate-800 rounded-full">
-                          <div className="h-full bg-primary w-1/4 rounded-full" />
+                          <div className="h-full bg-gradient-to-l from-[#1B8354] to-[#25935F] w-1/4 rounded-full" />
                         </div>
                         <span className="text-xs text-muted-foreground">03:20</span>
                       </div>
@@ -157,7 +157,7 @@ export default function LessonPage({ params }: LessonPageProps) {
 
               {/* Sidebar */}
               <div className="space-y-6">
-                <div className="bg-primary rounded-2xl p-8 flex flex-col items-center justify-center text-center shadow-2xl relative overflow-hidden">
+                <div className="bg-gradient-to-l from-[#1B8354] to-[#25935F] rounded-2xl p-8 flex flex-col items-center justify-center text-center shadow-2xl relative overflow-hidden">
                   <h3 className="text-white text-2xl font-black mb-4 tracking-tight">
                     قاعدة المبتدأ
                   </h3>

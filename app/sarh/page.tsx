@@ -280,7 +280,7 @@ export default function IndexPage() {
           <motion.div variants={itemVariants} className="mt-12 flex flex-wrap items-center justify-center gap-4">
             <button
               onClick={() => document.getElementById('builder')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-primary px-8 py-4 text-base font-bold text-primary-foreground transition-all hover:scale-105 active:scale-95"
+              className="group relative flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-l from-[#1B8354] to-[#25935F] px-8 py-4 text-base font-bold text-primary-foreground transition-all hover:scale-105 active:scale-95"
             >
               ابدأ بناء مشروعك
               <ArrowLeft className="h-5 w-5 transition-transform group-hover:-translate-x-1" />
@@ -352,7 +352,7 @@ export default function IndexPage() {
                 <div className="absolute inset-0 bg-grid-black/[0.02]" />
                 <div className="relative h-full w-full rounded-[1.5rem] bg-card border border-border p-8 flex flex-col justify-center">
                   <div className="flex items-center gap-4 mb-8">
-                    <div className="h-12 w-12 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-black">S</div>
+                    <div className="h-12 w-12 rounded-full bg-gradient-to-l from-[#1B8354] to-[#25935F] flex items-center justify-center text-primary-foreground font-black">S</div>
                     <div className="space-y-1">
                       <div className="text-sm font-bold text-white">سلطان علي</div>
                       <div className="text-[10px] text-muted-foreground">@sultan_dev</div>
@@ -368,7 +368,7 @@ export default function IndexPage() {
                     </div>
                   </div>
                   <div className="mt-12 flex justify-end">
-                    <button className="h-12 px-6 rounded-full bg-primary text-primary-foreground text-sm font-black shadow-lg shadow-primary/20">
+                    <button className="h-12 px-6 rounded-full bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground text-sm font-black shadow-lg shadow-primary/20">
                       ابدأ البناء
                     </button>
                   </div>
@@ -407,7 +407,7 @@ export default function IndexPage() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative overflow-hidden rounded-[2.5rem] bg-primary px-8 py-16 sm:px-16 text-center"
+            className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-l from-[#1B8354] to-[#25935F] px-8 py-16 sm:px-16 text-center"
           >
             <div className="absolute inset-0 bg-[#000]/10 mix-blend-overlay" />
             <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
@@ -470,13 +470,13 @@ export default function IndexPage() {
               <div className="inline-flex rounded-full bg-secondary p-1 border border-border">
                 <button
                   onClick={() => { setFilter("single"); setSelectedProject(null); }}
-                  className={`rounded-full px-6 py-2.5 text-sm font-bold transition-all ${filter === "single" ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20" : "text-muted-foreground hover:text-white"}`}
+                  className={`rounded-full px-6 py-2.5 text-sm font-bold transition-all ${filter === "single" ? "bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground shadow-lg shadow-primary/20" : "text-muted-foreground hover:text-white"}`}
                 >
                   مادة واحدة
                 </button>
                 <button
                   onClick={() => { setFilter("multi"); setSelectedProject(null); }}
-                  className={`rounded-full px-6 py-2.5 text-sm font-bold transition-all ${filter === "multi" ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20" : "text-muted-foreground hover:text-white"}`}
+                  className={`rounded-full px-6 py-2.5 text-sm font-bold transition-all ${filter === "multi" ? "bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground shadow-lg shadow-primary/20" : "text-muted-foreground hover:text-white"}`}
                 >
                   مواد متعددة
                 </button>
@@ -517,7 +517,7 @@ export default function IndexPage() {
                       <div className="flex flex-wrap gap-3">
                         <button
                           onClick={() => setCareerPath("all")}
-                          className={`rounded-xl px-5 py-2.5 text-sm font-bold transition-all ${careerPath === "all" ? "bg-primary text-primary-foreground" : "bg-white/5 text-muted-foreground hover:bg-white/10"}`}
+                          className={`rounded-xl px-5 py-2.5 text-sm font-bold transition-all ${careerPath === "all" ? "bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground" : "bg-white/5 text-muted-foreground hover:bg-white/10"}`}
                         >
                           الكل
                         </button>
@@ -525,7 +525,7 @@ export default function IndexPage() {
                           <button
                             key={cp.id}
                             onClick={() => setCareerPath(cp.id)}
-                            className={`rounded-xl px-5 py-2.5 text-sm font-bold transition-all ${careerPath === cp.id ? "bg-primary text-primary-foreground" : "bg-white/5 text-muted-foreground hover:bg-white/10"}`}
+                            className={`rounded-xl px-5 py-2.5 text-sm font-bold transition-all ${careerPath === cp.id ? "bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground" : "bg-white/5 text-muted-foreground hover:bg-white/10"}`}
                           >
                             {cp.label}
                           </button>
@@ -586,7 +586,7 @@ export default function IndexPage() {
             <button
               onClick={handleBuild}
               disabled={!canBuild || loading}
-              className="rounded-2xl bg-primary px-12 py-5 text-xl font-black text-black transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-primary/30 disabled:opacity-50"
+              className="rounded-2xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-12 py-5 text-xl font-black text-black transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-primary/30 disabled:opacity-50"
             >
               {loading ? "جاري التجهيز..." : "شيّد صرحك الآن"}
             </button>
@@ -647,7 +647,7 @@ export default function IndexPage() {
                 <button
                   onClick={handleBuild}
                   disabled={!canBuild || loading}
-                  className="group relative w-full sm:w-auto overflow-hidden rounded-2xl bg-primary px-12 py-5 text-xl font-black text-black shadow-2xl transition-all hover:scale-105 active:scale-95 disabled:opacity-50"
+                  className="group relative w-full sm:w-auto overflow-hidden rounded-2xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-12 py-5 text-xl font-black text-black shadow-2xl transition-all hover:scale-105 active:scale-95 disabled:opacity-50"
                 >
                   {loading ? "جاري التجهيز..." : "شيّد صرحك الآن"}
                 </button>

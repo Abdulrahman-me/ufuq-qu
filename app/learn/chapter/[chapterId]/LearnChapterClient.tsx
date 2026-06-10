@@ -311,7 +311,7 @@ export function LearnChapterClient({
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={endSession}
-                className="flex items-center gap-2 rounded-2xl bg-primary px-5 py-2.5 text-sm font-black text-primary-foreground shadow-lg shadow-primary/30"
+                className="flex items-center gap-2 rounded-2xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-5 py-2.5 text-sm font-black text-primary-foreground shadow-lg shadow-primary/30"
               >
                 <StickyNote className="h-4 w-4" />
                 إنهاء الجلسة
@@ -608,7 +608,7 @@ export function LearnChapterClient({
                   </button>
                   <Link
                     href="/sanad"
-                    className="rounded-xl bg-primary px-5 py-2.5 text-sm font-black text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-[1.02]"
+                    className="rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-5 py-2.5 text-sm font-black text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-[1.02]"
                   >
                     الانتقال إلى سند
                   </Link>

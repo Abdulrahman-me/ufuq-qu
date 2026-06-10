@@ -56,7 +56,7 @@ export function DevIssueSealCard({ onIssued }: { onIssued?: () => void }) {
         type="button"
         onClick={issueTestSeal}
         disabled={loading}
-        className="w-full rounded-xl bg-primary px-4 py-2.5 text-sm font-bold text-primary-foreground shadow-md shadow-primary/20 transition-transform hover:scale-[1.01] disabled:opacity-60"
+        className="w-full rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-4 py-2.5 text-sm font-bold text-primary-foreground shadow-md shadow-primary/20 transition-transform hover:scale-[1.01] disabled:opacity-60"
       >
         {loading ? "جاري الإصدار…" : "إصدار ختم تجريبي: قواعد بيانات متقدمة"}
       </button>

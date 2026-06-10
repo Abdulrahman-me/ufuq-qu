@@ -4,6 +4,24 @@ import dynamic from "next/dynamic";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import AppNavbar from "@/components/AppNavbar";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import localFont from "next/font/local";
+
+const saudiFont = localFont({
+  src: [
+    {
+      path: "../fonts/Saudi Font/Saudi-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../fonts/Saudi Font/Saudi-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-saudi",
+  display: "swap",
+});
 
 const AnimatedBackground = dynamic(
   () => import("@/components/AnimatedBackground").then((m) => m.AnimatedBackground),
@@ -31,7 +49,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning className={saudiFont.variable}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

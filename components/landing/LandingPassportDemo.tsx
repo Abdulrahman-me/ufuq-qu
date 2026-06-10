@@ -193,7 +193,7 @@ export function LandingPassportDemo() {
             >
               <Link
                 href="/passport"
-                className="inline-flex items-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-black text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-[1.02]"
+                className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-5 py-2.5 text-sm font-black text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-[1.02]"
               >
                 <Award className="h-4 w-4" />
                 افتح جوازك المهاري

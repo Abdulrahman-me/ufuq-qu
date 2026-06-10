@@ -233,7 +233,7 @@ export default function ArchivePage() {
               <div className="space-y-2">
                 {lessonsLearned.map((lesson, i) => (
                   <div key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-gradient-to-l from-[#1B8354] to-[#25935F]" />
                     {lesson}
                   </div>
                 ))}

@@ -31,7 +31,7 @@ export default function DashboardPage() {
                 <p className="text-xs text-muted-foreground">برمجة 1</p>
                 <h3 className="text-sm font-bold">هياكل البيانات الأساسية</h3>
                 <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                  <div className="h-full w-3/5 rounded-full bg-primary" />
+                  <div className="h-full w-3/5 rounded-full bg-gradient-to-l from-[#1B8354] to-[#25935F]" />
                 </div>
                 <p className="mt-1 text-[11px] text-muted-foreground">
                   تم إكمال 60% · مقترح من سند لتحسين مهارة التفكير الخوارزمي.
@@ -42,7 +42,7 @@ export default function DashboardPage() {
                 <p className="text-xs text-muted-foreground">قواعد البيانات</p>
                 <h3 className="text-sm font-bold">التطبيع والعلاقات</h3>
                 <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                  <div className="h-full w-1/4 rounded-full bg-primary" />
+                  <div className="h-full w-1/4 rounded-full bg-gradient-to-l from-[#1B8354] to-[#25935F]" />
                 </div>
                 <p className="mt-1 text-[11px] text-muted-foreground">
                   تم إكمال 25% · موصى به لرفع جاهزيتك قبل اختبار الجاهزية القادم.
@@ -70,7 +70,7 @@ export default function DashboardPage() {
                   <span className="font-bold text-primary">92%</span>
                 </div>
                 <div className="h-1.5 overflow-hidden rounded-full bg-muted">
-                  <div className="h-full w-[92%] bg-primary" />
+                  <div className="h-full w-[92%] bg-gradient-to-l from-[#1B8354] to-[#25935F]" />
                 </div>
               </div>
               <div>
@@ -79,7 +79,7 @@ export default function DashboardPage() {
                   <span className="font-bold text-primary">86%</span>
                 </div>
                 <div className="h-1.5 overflow-hidden rounded-full bg-muted">
-                  <div className="h-full w-[86%] bg-primary" />
+                  <div className="h-full w-[86%] bg-gradient-to-l from-[#1B8354] to-[#25935F]" />
                 </div>
               </div>
               <div>
@@ -88,7 +88,7 @@ export default function DashboardPage() {
                   <span className="font-bold text-primary">68%</span>
                 </div>
                 <div className="h-1.5 overflow-hidden rounded-full bg-muted">
-                  <div className="h-full w-[68%] bg-primary" />
+                  <div className="h-full w-[68%] bg-gradient-to-l from-[#1B8354] to-[#25935F]" />
                 </div>
               </div>
             </div>

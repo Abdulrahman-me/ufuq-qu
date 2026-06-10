@@ -94,7 +94,7 @@ export default function TaskDetails() {
                     <p className="mb-4 text-muted-foreground">لم يتم العثور على بيانات المهمة.</p>
                     <button
                         onClick={() => router.push("/sarh/workspace")}
-                        className="rounded-xl bg-primary px-6 py-2 text-white"
+                        className="rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-6 py-2 text-white"
                     >
                         العودة لمساحة العمل
                     </button>
@@ -200,7 +200,7 @@ export default function TaskDetails() {
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4 transition-all hover:bg-primary/10 hover:border-primary/40 group col-span-full sm:col-span-1"
                                 >
-                                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary group-hover:bg-gradient-to-l from-[#1B8354] to-[#25935F] group-hover:text-white transition-colors">
                                         <Video className="h-5 w-5" />
                                     </div>
                                     <div className="flex-1">

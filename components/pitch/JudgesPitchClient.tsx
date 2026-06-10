@@ -399,7 +399,7 @@ function JudgesPitchClient() {
                   onClick={() => setIndex(i)}
                   className={cn(
                     "h-2 rounded-full transition-all",
-                    i === index ? "w-8 bg-primary" : "w-2 bg-muted-foreground/35 hover:bg-muted-foreground/55",
+                    i === index ? "w-8 bg-gradient-to-l from-[#1B8354] to-[#25935F]" : "w-2 bg-muted-foreground/35 hover:bg-muted-foreground/55",
                   )}
                 />
               ))}
@@ -424,7 +424,7 @@ function JudgesPitchClient() {
           <p className="mt-2 text-xs text-muted-foreground">شرائح ١٦:٩ · جاهزة للطباعة والعرض</p>
           <Link
             href="/"
-            className="mt-5 inline-flex items-center justify-center rounded-2xl bg-primary px-6 py-2.5 text-sm font-black text-primary-foreground"
+            className="mt-5 inline-flex items-center justify-center rounded-2xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-6 py-2.5 text-sm font-black text-primary-foreground"
           >
             العودة للرئيسية
           </Link>

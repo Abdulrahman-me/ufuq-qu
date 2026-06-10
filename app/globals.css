@@ -4,13 +4,13 @@
 
 @layer base {
   :root {
-    --background: 220 33% 99%;
-    --foreground: 220 37% 8%;
+    --background: 42 18% 93%;
+    --foreground: 220 20% 14%;
     --card: 210 20% 98%;
-    --card-foreground: 220 37% 8%;
+    --card-foreground: 220 20% 14%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 37% 8%;
-    --primary: 154 69% 30%;
+    --popover-foreground: 220 20% 14%;
+    --primary: 158 61% 47%;
     --primary-foreground: 0 0% 100%;
     --secondary: 210 20% 96%;
     --secondary-foreground: 220 20% 14%;
@@ -135,28 +135,4 @@
   .custom-scrollbar::-webkit-scrollbar-thumb {
     @apply rounded-full bg-muted-foreground/20 hover:bg-muted-foreground/40 transition-colors;
   }
-
-  /* --- Platforms Code Typography Scales --- */
-  /* Display Scale */
-  .display-2xl { font-size: 4.5rem; line-height: 5.625rem; letter-spacing: 0.02em; }
-  .display-xl { font-size: 3.75rem; line-height: 4.5rem; letter-spacing: 0.02em; }
-  .display-lg { font-size: 3rem; line-height: 3.75rem; letter-spacing: 0.02em; }
-  .display-md { font-size: 2.25rem; line-height: 2.75rem; letter-spacing: 0.02em; }
-  .display-sm { font-size: 1.875rem; line-height: 2.375rem; }
-  .display-xs { font-size: 1.5rem; line-height: 2rem; }
-
-  /* Text Scale */
-  .text-style-xl { font-size: 1.25rem; line-height: 1.875rem; }
-  .text-style-lg { font-size: 1.125rem; line-height: 1.75rem; }
-  .text-style-md { font-size: 1rem; line-height: 1.5rem; }
-  .text-style-sm { font-size: 0.875rem; line-height: 1.25rem; }
-  .text-style-xs { font-size: 0.75rem; line-height: 1.125rem; }
-  .text-style-2xs { font-size: 0.625rem; line-height: 0.875rem; }
-
-  /* --- Official Green Gradients --- */
-  .bg-grad-1 { background: linear-gradient(90deg, #166A45 0%, #092A1E 100%); }
-  .bg-grad-2 { background: linear-gradient(45deg, #188354 0%, #25935F 100%); }
-  .bg-grad-3 { background: linear-gradient(90deg, #14573A 0%, #188354 100%); }
-  .bg-grad-4 { background: linear-gradient(26.5deg, #14573A 0%, #166A45 100%); }
-  .bg-grad-5 { background: linear-gradient(45deg, #104631 0%, #188354 100%); }
 }

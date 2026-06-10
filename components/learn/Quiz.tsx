@@ -106,7 +106,7 @@ export function Quiz({ questions, className }: QuizProps) {
               <button
                 type="button"
                 onClick={goNext}
-                className="mt-4 w-full py-2 rounded-xl bg-primary text-primary-foreground text-sm font-bold"
+                className="mt-4 w-full py-2 rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground text-sm font-bold"
               >
                 {current < questions.length - 1 ? "السؤال التالي" : "اعرض النتيجة"}
               </button>

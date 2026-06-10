@@ -79,7 +79,7 @@ function StudentInsightDetailPanel({ student }: { student: StudentInsight }) {
         <ul className="space-y-2">
           {student.signals.map((s) => (
             <li key={s} className="flex gap-2 text-sm text-foreground/90">
-              <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-primary" />
+              <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-gradient-to-l from-[#1B8354] to-[#25935F]" />
               <span className="leading-relaxed">{s}</span>
             </li>
           ))}

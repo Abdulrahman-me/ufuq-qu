@@ -599,7 +599,7 @@ export function PassportBooklet({
                         e.preventDefault();
                         go(2);
                       }}
-                      className="flex items-center justify-center gap-2 rounded-2xl bg-primary px-4 py-3 text-sm font-black text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-[1.02]"
+                      className="flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-4 py-3 text-sm font-black text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:scale-[1.02]"
                     >
                       عرض الأوسمة في الكتيب
                       <ArrowLeft className="h-4 w-4" />
@@ -640,7 +640,7 @@ export function PassportBooklet({
                 onClick={() => go(i)}
                 className={cn(
                   "h-2.5 rounded-full transition-all",
-                  i === spread ? "w-8 bg-primary" : "w-2.5 bg-muted-foreground/30 hover:bg-muted-foreground/50",
+                  i === spread ? "w-8 bg-gradient-to-l from-[#1B8354] to-[#25935F]" : "w-2.5 bg-muted-foreground/30 hover:bg-muted-foreground/50",
                 )}
                 aria-label={`انتقل للفتحة ${i + 1}`}
               />

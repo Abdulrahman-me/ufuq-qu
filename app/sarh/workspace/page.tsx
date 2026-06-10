@@ -180,7 +180,7 @@ export default function Workspace() {
         <p className="text-lg text-muted-foreground">لا توجد بيانات مشروع. ابدأ من الصفحة الرئيسية.</p>
         <button
           onClick={() => router.push("/sarh")}
-          className="flex items-center gap-2 rounded-xl bg-primary px-6 py-3 font-bold text-primary-foreground"
+          className="flex items-center gap-2 rounded-xl bg-gradient-to-l from-[#1B8354] to-[#25935F] px-6 py-3 font-bold text-primary-foreground"
         >
           <ArrowRight className="h-5 w-5" />
           العودة للرئيسية
@@ -254,7 +254,7 @@ class CollaborativeFiltering:
                 router.push("/sarh/archive");
             }
           }}
-          className="mt-2 flex items-center gap-1.5 rounded-lg bg-primary px-3 py-1.5 text-xs font-bold text-primary-foreground transition-colors hover:bg-primary/90"
+          className="mt-2 flex items-center gap-1.5 rounded-lg bg-gradient-to-l from-[#1B8354] to-[#25935F] px-3 py-1.5 text-xs font-bold text-primary-foreground transition-colors hover:bg-primary/90"
         >
           <Sparkles className="h-3.5 w-3.5" />
           عرض الحل في الأرشيف
@@ -341,10 +341,10 @@ class CollaborativeFiltering:
                   return (
                     <div key={i} className={`relative flex gap-4 pb-6 ${!isActive && !isCompleted ? "opacity-40" : ""}`}>
                       {i < data.roadmap.length - 1 && (
-                        <div className={`absolute right-[17px] top-10 h-full w-0.5 ${isCompleted ? "bg-primary" : "bg-border"}`} />
+                        <div className={`absolute right-[17px] top-10 h-full w-0.5 ${isCompleted ? "bg-gradient-to-l from-[#1B8354] to-[#25935F]" : "bg-border"}`} />
                       )}
-                      <div className={`relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-xs font-bold shadow-md transition-colors ${isCompleted ? "bg-primary text-primary-foreground" :
-                        isActive ? "bg-primary text-primary-foreground shadow-primary/20" :
+                      <div className={`relative z-10 flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-xs font-bold shadow-md transition-colors ${isCompleted ? "bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground" :
+                        isActive ? "bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground shadow-primary/20" :
                           "bg-muted text-muted-foreground"
                         }`}>
                         {isCompleted ? <CheckCircle2 className="h-5 w-5" /> : i + 1}
@@ -365,7 +365,7 @@ class CollaborativeFiltering:
                           <button
                             onClick={handleCompletePhase}
                             disabled={isGeneratingNextPhase || progress < 80}
-                            className="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-primary py-2 text-xs font-bold text-primary-foreground transition-all hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-l from-[#1B8354] to-[#25935F] py-2 text-xs font-bold text-primary-foreground transition-all hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
                           >
                             {isGeneratingNextPhase ? (
                               <Loader2 className="h-3.5 w-3.5 animate-spin" />
@@ -400,7 +400,7 @@ class CollaborativeFiltering:
                 </div>
                 <div className="mb-4 h-1.5 overflow-hidden rounded-full bg-muted">
                   <div
-                    className="h-full rounded-full bg-primary transition-all duration-500"
+                    className="h-full rounded-full bg-gradient-to-l from-[#1B8354] to-[#25935F] transition-all duration-500"
                     style={{ width: `${progress}%` }}
                   />
                 </div>

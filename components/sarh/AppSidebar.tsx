@@ -48,7 +48,7 @@ export default function AppSidebar() {
                 <Link
                   href={item.path}
                   className={`flex h-12 w-12 items-center justify-center rounded-2xl transition-all duration-300 ${isActive
-                    ? "bg-primary text-primary-foreground shadow-lg shadow-primary/20 scale-110"
+                    ? "bg-gradient-to-l from-[#1B8354] to-[#25935F] text-primary-foreground shadow-lg shadow-primary/20 scale-110"
                     : "text-muted-foreground hover:bg-white/5 hover:text-white"
                     }`}
                 >
