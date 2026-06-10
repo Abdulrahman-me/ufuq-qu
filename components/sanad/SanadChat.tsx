@@ -255,7 +255,7 @@ export default function SanadChat() {
               whileTap={{ scale: 0.97 }}
               onClick={sendMessage}
               disabled={loading}
-              className="flex h-[52px] shrink-0 items-center justify-center gap-2 rounded-2xl bg-primary px-6 text-sm font-black text-primary-foreground shadow-lg shadow-primary/30 disabled:opacity-50 sm:w-auto sm:px-8"
+              className="flex h-[52px] shrink-0 items-center justify-center gap-2 rounded-2xl bg-grad-2 px-6 text-sm font-black text-primary-foreground shadow-lg shadow-primary/30 disabled:opacity-50 sm:w-auto sm:px-8"
             >
               <Send className="h-4 w-4" />
               إرسال

@@ -186,8 +186,8 @@ export default function AppNavbar() {
               className={cn(
                 "flex items-center gap-1 rounded-xl border px-4 py-2 text-sm font-bold transition-all",
                 openExplore
-                  ? "border-primary/40 bg-primary/10 text-foreground"
-                  : "border-border bg-background text-muted-foreground hover:border-primary/30 hover:text-foreground",
+                  ? "border-primary/40 bg-grad-2 text-white"
+                  : "border-border bg-background text-muted-foreground hover:border-primary/30 hover:text-primary",
               )}
             >
               <LayoutGrid className="h-4 w-4" />

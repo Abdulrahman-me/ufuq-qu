@@ -78,18 +78,18 @@ export function LandingHero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.05 }}
-            className="text-4xl font-black leading-[1.25] tracking-tight text-foreground md:text-5xl lg:text-[3.25rem]"
+            className="display-xl font-black leading-[1.25] tracking-tight text-foreground md:display-2xl"
           >
             ارفع{" "}
-            <span className="bg-gradient-to-l from-primary to-emerald-400 bg-clip-text text-transparent">
+            <span className="bg-grad-2 bg-clip-text text-transparent">
               جاهزيتك الأكاديمية
             </span>
             <br />
             <span className="mt-1 block min-h-[1.35em] text-3xl md:text-4xl lg:text-[2.75rem]">
               مع{" "}
-              <span className="text-primary">
+              <span className="bg-grad-3 bg-clip-text text-transparent">
                 {typed}
-                <span className="animate-pulse text-primary">|</span>
+                <span className="animate-pulse">|</span>
               </span>
             </span>
           </motion.h1>
@@ -112,7 +112,7 @@ export function LandingHero() {
             <Link
               href="/learn"
               prefetch
-              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-2xl bg-primary px-7 py-3.5 text-sm font-black text-primary-foreground shadow-xl shadow-primary/25 transition-transform hover:scale-[1.02] active:scale-[0.98]"
+              className="group relative inline-flex items-center gap-2 overflow-hidden rounded-2xl bg-grad-2 px-7 py-3.5 text-sm font-black text-primary-foreground shadow-xl shadow-primary/25 transition-transform hover:scale-[1.02] active:scale-[0.98]"
             >
               <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-500 group-hover:translate-x-full" />
               <GraduationCap className="relative h-4 w-4" />
