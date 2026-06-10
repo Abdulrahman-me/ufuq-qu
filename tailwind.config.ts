@@ -16,7 +16,8 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        saudi: ["var(--font-saudi)", "sans-serif"],
+        sans: ["var(--font-ibm)", "sans-serif"],
+        ibm: ["var(--font-ibm)", "sans-serif"],
         tajawal: ["Tajawal", "Noto Sans Arabic", "sans-serif"],
       },
       colors: {

@@ -6,20 +6,17 @@ import AppNavbar from "@/components/AppNavbar";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import localFont from "next/font/local";
 
-const saudiFont = localFont({
+const ibmFont = localFont({
   src: [
-    {
-      path: "../fonts/Saudi Font/Saudi-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../fonts/Saudi Font/Saudi-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
+    { path: "../fonts/IBM Plex Sans Arabic/IBMPlexSansArabic-Thin.ttf", weight: "100", style: "normal" },
+    { path: "../fonts/IBM Plex Sans Arabic/IBMPlexSansArabic-ExtraLight.ttf", weight: "200", style: "normal" },
+    { path: "../fonts/IBM Plex Sans Arabic/IBMPlexSansArabic-Light.ttf", weight: "300", style: "normal" },
+    { path: "../fonts/IBM Plex Sans Arabic/IBMPlexSansArabic-Regular.ttf", weight: "400", style: "normal" },
+    { path: "../fonts/IBM Plex Sans Arabic/IBMPlexSansArabic-Medium.ttf", weight: "500", style: "normal" },
+    { path: "../fonts/IBM Plex Sans Arabic/IBMPlexSansArabic-SemiBold.ttf", weight: "600", style: "normal" },
+    { path: "../fonts/IBM Plex Sans Arabic/IBMPlexSansArabic-Bold.ttf", weight: "700", style: "normal" },
   ],
-  variable: "--font-saudi",
+  variable: "--font-ibm",
   display: "swap",
 });
 
@@ -44,12 +41,8 @@ export default function RootLayout({
   return (
     <html lang="ar" dir="rtl" suppressHydrationWarning>
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
       </head>
-      <body suppressHydrationWarning className={saudiFont.variable}>
+      <body suppressHydrationWarning className={ibmFont.variable}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
