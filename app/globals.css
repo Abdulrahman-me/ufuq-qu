@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    /*  */
     --background: 42 18% 93%;
     --foreground: 220 20% 14%;
     --card: 210 20% 98%;
@@ -89,12 +90,18 @@
     font-family: var(--font-ibm), system-ui, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-bold;
   }
 }
 
 @layer utilities {
+
   /* Landing: subtle mesh + grid (Vercel / modern SaaS vibe) */
   .landing-mesh {
     background-image:
